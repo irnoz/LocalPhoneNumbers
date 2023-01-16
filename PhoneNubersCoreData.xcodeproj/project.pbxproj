@@ -14,6 +14,10 @@
 		A83B8F2A295045C500A8A252 /* PhoneNubersCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A83B8F28295045C500A8A252 /* PhoneNubersCoreData.xcdatamodeld */; };
 		A83B8F2C295045C700A8A252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83B8F2B295045C700A8A252 /* Assets.xcassets */; };
 		A83B8F2F295045C700A8A252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83B8F2D295045C700A8A252 /* LaunchScreen.storyboard */; };
+		A83B8F3E2950490300A8A252 /* PhoneNumbersListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B8F3C2950490300A8A252 /* PhoneNumbersListItem+CoreDataClass.swift */; };
+		A83B8F3F2950490300A8A252 /* PhoneNumbersListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B8F3D2950490300A8A252 /* PhoneNumbersListItem+CoreDataProperties.swift */; };
+		A83B8F4729505FF400A8A252 /* PhoneNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B8F4529505FF400A8A252 /* PhoneNumberTableViewCell.swift */; };
+		A83B8F4829505FF400A8A252 /* PhoneNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83B8F4629505FF400A8A252 /* PhoneNumberTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A83B8F2B295045C700A8A252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A83B8F2E295045C700A8A252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A83B8F30295045C700A8A252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A83B8F3C2950490300A8A252 /* PhoneNumbersListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumbersListItem+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A83B8F3D2950490300A8A252 /* PhoneNumbersListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumbersListItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A83B8F4529505FF400A8A252 /* PhoneNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTableViewCell.swift; sourceTree = "<group>"; };
+		A83B8F4629505FF400A8A252 /* PhoneNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumberTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		A83B8F1E295045C500A8A252 /* PhoneNubersCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				A83B8F4029505E7B00A8A252 /* PhoneNumberTableViewCell */,
+				A83B8F3B295048CE00A8A252 /* PhoneNumberListItem */,
 				A83B8F1F295045C500A8A252 /* AppDelegate.swift */,
 				A83B8F21295045C500A8A252 /* SceneDelegate.swift */,
 				A83B8F23295045C500A8A252 /* ViewController.swift */,
@@ -68,6 +78,24 @@
 				A83B8F28295045C500A8A252 /* PhoneNubersCoreData.xcdatamodeld */,
 			);
 			path = PhoneNubersCoreData;
+			sourceTree = "<group>";
+		};
+		A83B8F3B295048CE00A8A252 /* PhoneNumberListItem */ = {
+			isa = PBXGroup;
+			children = (
+				A83B8F3C2950490300A8A252 /* PhoneNumbersListItem+CoreDataClass.swift */,
+				A83B8F3D2950490300A8A252 /* PhoneNumbersListItem+CoreDataProperties.swift */,
+			);
+			path = PhoneNumberListItem;
+			sourceTree = "<group>";
+		};
+		A83B8F4029505E7B00A8A252 /* PhoneNumberTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A83B8F4529505FF400A8A252 /* PhoneNumberTableViewCell.swift */,
+				A83B8F4629505FF400A8A252 /* PhoneNumberTableViewCell.xib */,
+			);
+			path = PhoneNumberTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +159,7 @@
 				A83B8F2F295045C700A8A252 /* LaunchScreen.storyboard in Resources */,
 				A83B8F2C295045C700A8A252 /* Assets.xcassets in Resources */,
 				A83B8F27295045C500A8A252 /* Main.storyboard in Resources */,
+				A83B8F4829505FF400A8A252 /* PhoneNumberTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83B8F3E2950490300A8A252 /* PhoneNumbersListItem+CoreDataClass.swift in Sources */,
 				A83B8F2A295045C500A8A252 /* PhoneNubersCoreData.xcdatamodeld in Sources */,
+				A83B8F3F2950490300A8A252 /* PhoneNumbersListItem+CoreDataProperties.swift in Sources */,
 				A83B8F24295045C500A8A252 /* ViewController.swift in Sources */,
+				A83B8F4729505FF400A8A252 /* PhoneNumberTableViewCell.swift in Sources */,
 				A83B8F20295045C500A8A252 /* AppDelegate.swift in Sources */,
 				A83B8F22295045C500A8A252 /* SceneDelegate.swift in Sources */,
 			);

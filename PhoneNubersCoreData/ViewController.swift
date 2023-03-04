@@ -112,11 +112,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         saveContext()
     }
     
+    // MARK: TableView
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    // MARK: TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
     }
